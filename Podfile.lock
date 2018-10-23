@@ -1,0 +1,20 @@
+PODS:
+  - MessageKit (1.0.0)
+  - SnapKit (4.0.1)
+
+DEPENDENCIES:
+  - MessageKit
+  - SnapKit (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MessageKit
+    - SnapKit
+
+SPEC CHECKSUMS:
+  MessageKit: 16160036b16476b04bd0e9f2c7ce67e662e503e4
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+
+PODFILE CHECKSUM: 4e1860b638972293e5d03b2adbfcd68dc8103c28
+
+COCOAPODS: 1.5.3

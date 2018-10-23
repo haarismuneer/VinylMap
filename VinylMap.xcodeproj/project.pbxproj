@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A74447A3A23DA04EA396A0C /* Pods_VinylMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A23AD4727AB3AE51BE5F40B /* Pods_VinylMap.framework */; };
+		9D42F5A7217EBCEC00659691 /* DiscogsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D42F5A6217EBCEC00659691 /* DiscogsAPIClient.swift */; };
 		9DE6504D217EBB8700665D26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE6504C217EBB8700665D26 /* AppDelegate.swift */; };
-		9DE6504F217EBB8700665D26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE6504E217EBB8700665D26 /* ViewController.swift */; };
 		9DE65052217EBB8700665D26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE65050217EBB8700665D26 /* Main.storyboard */; };
 		9DE65054217EBB8B00665D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DE65053217EBB8B00665D26 /* Assets.xcassets */; };
 		9DE65057217EBB8B00665D26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE65055217EBB8B00665D26 /* LaunchScreen.storyboard */; };
+		9DFD57E3217EBEDC0064A9FF /* FirebaseAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD57E2217EBEDC0064A9FF /* FirebaseAPIClient.swift */; };
+		9DFD57E6217EBF220064A9FF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD57E5217EBF220064A9FF /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A23AD4727AB3AE51BE5F40B /* Pods_VinylMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VinylMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5791AEF93C7366B58CB1559B /* Pods-VinylMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinylMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VinylMap/Pods-VinylMap.debug.xcconfig"; sourceTree = "<group>"; };
+		9D42F5A6217EBCEC00659691 /* DiscogsAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsAPIClient.swift; sourceTree = "<group>"; };
 		9DE65049217EBB8700665D26 /* VinylMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VinylMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE6504C217EBB8700665D26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9DE6504E217EBB8700665D26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9DE65051217EBB8700665D26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DE65053217EBB8B00665D26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DE65056217EBB8B00665D26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DE65058217EBB8B00665D26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DFD57E2217EBEDC0064A9FF /* FirebaseAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAPIClient.swift; sourceTree = "<group>"; };
+		9DFD57E5217EBF220064A9FF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ED297ADFE41D5B254D557AA7 /* Pods-VinylMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinylMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-VinylMap/Pods-VinylMap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A74447A3A23DA04EA396A0C /* Pods_VinylMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00D052932CB0149E1A3C45E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5791AEF93C7366B58CB1559B /* Pods-VinylMap.debug.xcconfig */,
+				ED297ADFE41D5B254D557AA7 /* Pods-VinylMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D42F5A8217EBD2200659691 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9D42F5A6217EBCEC00659691 /* DiscogsAPIClient.swift */,
+				9DFD57E2217EBEDC0064A9FF /* FirebaseAPIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		9DE65040217EBB8700665D26 = {
 			isa = PBXGroup;
 			children = (
 				9DE6504B217EBB8700665D26 /* VinylMap */,
 				9DE6504A217EBB8700665D26 /* Products */,
+				00D052932CB0149E1A3C45E0 /* Pods */,
+				F3E6FF23B25733E7F6194E96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +83,47 @@
 		9DE6504B217EBB8700665D26 /* VinylMap */ = {
 			isa = PBXGroup;
 			children = (
+				9DFD57E4217EBEFB0064A9FF /* View Controllers */,
 				9DE6504C217EBB8700665D26 /* AppDelegate.swift */,
-				9DE6504E217EBB8700665D26 /* ViewController.swift */,
-				9DE65050217EBB8700665D26 /* Main.storyboard */,
-				9DE65053217EBB8B00665D26 /* Assets.xcassets */,
-				9DE65055217EBB8B00665D26 /* LaunchScreen.storyboard */,
-				9DE65058217EBB8B00665D26 /* Info.plist */,
+				9D42F5A8217EBD2200659691 /* Networking */,
+				9DE6505E217EBBAA00665D26 /* Resources */,
 			);
 			path = VinylMap;
+			sourceTree = "<group>";
+		};
+		9DE6505E217EBBAA00665D26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DE6505F217EBBD600665D26 /* Storyboards */,
+				9DE65053217EBB8B00665D26 /* Assets.xcassets */,
+				9DE65058217EBB8B00665D26 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9DE6505F217EBBD600665D26 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9DE65050217EBB8700665D26 /* Main.storyboard */,
+				9DE65055217EBB8B00665D26 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9DFD57E4217EBEFB0064A9FF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9DFD57E5217EBF220064A9FF /* LoginViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F3E6FF23B25733E7F6194E96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A23AD4727AB3AE51BE5F40B /* Pods_VinylMap.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DE6505B217EBB8B00665D26 /* Build configuration list for PBXNativeTarget "VinylMap" */;
 			buildPhases = (
+				A085CE8D4BDA685DFA541E13 /* [CP] Check Pods Manifest.lock */,
 				9DE65045217EBB8700665D26 /* Sources */,
 				9DE65046217EBB8700665D26 /* Frameworks */,
 				9DE65047217EBB8700665D26 /* Resources */,
+				24AEC06B132A28099BC7ABFA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +194,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24AEC06B132A28099BC7ABFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VinylMap/Pods-VinylMap-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VinylMap/Pods-VinylMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A085CE8D4BDA685DFA541E13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VinylMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9DE65045217EBB8700665D26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DE6504F217EBB8700665D26 /* ViewController.swift in Sources */,
+				9DFD57E6217EBF220064A9FF /* LoginViewController.swift in Sources */,
+				9DFD57E3217EBEDC0064A9FF /* FirebaseAPIClient.swift in Sources */,
 				9DE6504D217EBB8700665D26 /* AppDelegate.swift in Sources */,
+				9D42F5A7217EBCEC00659691 /* DiscogsAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +395,7 @@
 		};
 		9DE6505C217EBB8B00665D26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5791AEF93C7366B58CB1559B /* Pods-VinylMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +414,7 @@
 		};
 		9DE6505D217EBB8B00665D26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED297ADFE41D5B254D557AA7 /* Pods-VinylMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
