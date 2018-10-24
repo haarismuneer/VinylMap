@@ -6,7 +6,8 @@ target 'VinylMap' do
   use_frameworks!
 
   # Pods for VinylMap
-  pod 'MessageKit'
   pod 'SnapKit', '~> 4.0.0'
+  pod 'PromisesSwift', '~> 1.2.3'
+  pod 'Firebase/Core'
 
 end
